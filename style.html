@@ -18,7 +18,18 @@
         div{
             background-color: deepskyblue;
             font-size:10px; /*크기 상속안됨*/
+            border: 5px solid red;
+            margin:5px;
+            width:400px;
+            height:600px;
+
         }
+        div #p2{ /*클래스보다 우선순위 높은 id*/
+            margin:30px auto 30px auto;
+            display:inline-block;  /*margin collapse를 해결하기 위함 */
+
+        }
+
     </style>
 </head>
 <body>
@@ -31,6 +42,9 @@
     <div>
         <p class="blue2">
             hi2
+        </p>
+        <p style="border:inherit;" id="p2">
+            nth-child(2)
         </p>
     </div>
 </body>
