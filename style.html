@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p:hover{
+            color:pink;
+        }
+        h1::after{
+            content:"after입력";
+            color:aqua;
+        }
+        .blue{
+            background-color: antiquewhite;
+        }
+        div{
+            background-color: deepskyblue;
+            font-size:10px; /*크기 상속안됨*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Say Hello</h1>
+    <p style="color:yellow;">Hello World</p> <!-- 우선순위 !important 빼고 가장높음 -->
+    <a href="#">클릭</a>
+    <p class="blue">
+        hi1
+    </p>
+    <div>
+        <p class="blue2">
+            hi2
+        </p>
+    </div>
+</body>
+</html>
