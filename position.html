@@ -18,6 +18,7 @@
             color:white;
             width: 100px;
             height: 100px;
+            overflow:hidden;
         }
         .box2{
             position:absolute;
@@ -36,6 +37,17 @@
             width: 100px;
             height: 100px;
             margin:0;
+        }
+        section{
+            /*margin-top:40px;*/
+            height:1000px;
+            border:3px solid black;
+        }
+        h2 {
+            position: sticky;
+            top: 0;
+            background: greenyellow;
+
         }
     </style>
 </head>
@@ -64,6 +76,33 @@
         box2
     </div>
 
+</div>
+<section>
+    <h2>오늘의 메뉴1</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iure minus numquam pariatur porro quidem
+            temporibus? Aut, consectetur corporis eius ex explicabo labore laudantium tenetur? Cupiditate dicta eaque
+            reiciendis temporibus.
+        </li>
+    </ul>
+</section>
+<section>
+    <h2>오늘의 메뉴2</h2>
+    <ul>
+        <li>Accusamus atque dolores ea eaque earum harum laborum laudantium necessitatibus, nihil pariatur quibusdam rem
+            sunt, temporibus? Blanditiis dolor repudiandae ullam! Dicta eius error in maxime nisi non tempore temporibus
+            vel?
+        </li>
+    </ul>
+</section>
+<div style="width: 40px; height: 40px; background-color: green; position:relative;top:20px">
+    rel
+</div>
+<div style="width: 40px; height: 40px; background-color: blue;position:relative;z-index: -1;top:20px">
+    rel
+</div>
+<div style="width: 40px; height: 40px; background-color: red;">
+    start
 </div>
 </body>
 </html>
